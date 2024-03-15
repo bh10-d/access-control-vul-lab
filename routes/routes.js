@@ -1,25 +1,16 @@
 const { Router } = require('express');
+const lab1 = require('../routes/labs/lab1');
+const lab2 = require('../routes/labs/lab2');
 
+// const app = require('express')();
 
-const app = Router(); 
-  
-app.get('/', (req, res) => { 
-    res.render('index', {people: "buiduchieu"});
+const app = Router();
+
+app.get('/', (req, res) => {
+    res.render('index');
 });
-app.get('/lab1', (req, res) => { 
-    res.render('index', {people: "buiduchieu"});
-});
-app.get('/lab2', (req, res) => { 
-    res.render('index', {people: "buiduchieu"});
-});
-app.get('/lab3', (req, res) => { 
-    res.render('index', {people: "buiduchieu"});
-});
-app.get('/lab4', (req, res) => { 
-    res.render('index', {people: "buiduchieu"});
-});
-app.get('/lab5', (req, res) => { 
-    res.render('index', {people: "buiduchieu"});
-}); 
-  
+
+app.use(lab1);
+app.use(lab2);
+
 module.exports = app;
