@@ -4,34 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=css/academyLabHeader.css rel=stylesheet type="text/css">
+    <link href=css/labsEcommerce.css rel=stylesheet type="text/css">
     <title>Access Control Lab</title>
 </head>
 <body>
-    {{!-- evaluation context --}}
-    <p>Hello World</p>
-    <ul>
-        <p>{{people}}</p>
-        
-        {{!-- guide to use --}}
-        {{!-- each helper interates an array --}}
-        {{!-- {{#each people}}
-        <li>{{this}}</li>
-        {{/each}} --}}
-        
-        {{!-- with helper dives into an object-property --}}
-        {{!-- {{#with people}}
-        <li>{{nhom2}}</li>
-        <li>{{lab}}</li>
-        {{/with}} --}}
-
-        {{!-- without evaluation context using with object --}}
-        {{!-- <li>{{people.nhom2}}</li>
-        <li>{{people.lab}}</li> --}}
-
-        {{!-- changing the context --}}
-        {{!-- {{#each people}}
-            {{../prefix}} {{nhom2}}
-        {{/each}} --}}
-    </ul>
+    {{!-- {{> header}} --}}
+    {{> layout}}
+    {{!-- {{> footer}} --}}
 </body>
 </html>
