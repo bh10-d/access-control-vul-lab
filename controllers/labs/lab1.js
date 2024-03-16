@@ -1,4 +1,4 @@
-
+const path = require('path');
 
 lab1 = {
     getLab: (req, res)=>{
@@ -6,6 +6,10 @@ lab1 = {
     },
     getId: (req, res)=>{
         res.end('10');
+    },
+    getRobots: (req, res)=>{
+        res.statusCode = 200;
+        res.sendFile(path.join(__dirname, '../../robots.txt'), 'utf8');
     }
 }
 
