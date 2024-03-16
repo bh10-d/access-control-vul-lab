@@ -2,7 +2,7 @@ const path = require('path');
 
 lab1 = {
     getLab: (req, res)=>{
-        res.end('buiduchieu');
+        res.render('index');
     },
     getId: (req, res)=>{
         res.end('10');

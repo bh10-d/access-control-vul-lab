@@ -14,7 +14,7 @@ app.set('view engine', 'hbs');
 
 // app configuration
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(routes)
+app.use(routes);
 
 
 // // routes configuration

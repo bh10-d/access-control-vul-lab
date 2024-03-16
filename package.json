@@ -1,5 +1,5 @@
 {
-  "name": "accesscontrol-lab",
+  "name": "access-control-vul-lab",
   "version": "1.0.0",
   "description": "accesss control lab build",
   "main": "index.js",
@@ -14,6 +14,8 @@
   "author": "buiduchieu",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.3",
     "hbs": "^4.2.0"
   },

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href=css/academyLabHeader.css rel=stylesheet>
+    <link href=css/labs.css rel=stylesheet>
+    <title>Unprotected admin functionality with unpredictable URL</title>
+</head>
+
+<body>
+    <div theme="">
+        <section class="maincontainer">
+            <div class="container is-page">
+                <header class="navigation-header">
+                    <section class="top-links">
+                        <a href= />Home</a>
+                        <p>|</p>
+                        <script>
+                            var isAdmin = false;
+                            if (isAdmin) {
+                                var topLinksTag = document.getElementsByClassName("top-links")[0];
+                                var adminPanelTag = document.createElement('a');
+                                adminPanelTag.setAttribute('href', '/administrator');
+                                adminPanelTag.innerText = 'Admin panel';
+                                topLinksTag.append(adminPanelTag);
+                                var pTag = document.createElement('p');
+                                pTag.innerText = '|';
+                                topLinksTag.appendChild(pTag);
+                            }
+                        </script>
+                        <a href="/my-account">My account</a>
+                        <p>|</p>
+                    </section>
+                </header>
+                <header class="notification-header">
+                </header>
+                <section>
+                    <h1>Users</h1>
+                    <div>
+                        <span>wiener - </span>
+                        <a href="/admin-5tseao/delete?username=wiener">Delete</a>
+                    </div>
+                    <div>
+                        <span>carlos - </span>
+                        <a href="/admin-5tseao/delete?username=carlos">Delete</a>
+                    </div>
+                </section>
+                <br>
+                <hr>
+            </div>
+        </section>
+        <div class="footer-wrapper">
+        </div>
+    </div>
+</body>
+
+</html>

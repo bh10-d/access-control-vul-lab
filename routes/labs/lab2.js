@@ -5,4 +5,9 @@ const app = Router();
 
 app.get('/lab2', lab2.getLab);
 
+app.all('/lab2/*', (req,res) => {
+    res.statusCode = 404;
+    res.end('Not found');
+});
+
 module.exports = app;

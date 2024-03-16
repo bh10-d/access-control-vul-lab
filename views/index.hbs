@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,26 @@
     <link href=css/labsEcommerce.css rel=stylesheet type="text/css">
     <title>Access Control Lab</title>
 </head>
+
 <body>
     {{!-- {{> header}} --}}
     {{> layout}}
     {{!-- {{> footer}} --}}
+    {{#if lab2}}
+    <script>
+        var isAdmin = false;
+        if (isAdmin) {
+            var topLinksTag = document.getElementsByClassName("top-links")[0];
+            var adminPanelTag = document.createElement('a');
+            adminPanelTag.setAttribute('href', '/administrator');
+            adminPanelTag.innerText = 'Admin panel';
+            topLinksTag.append(adminPanelTag);
+            var pTag = document.createElement('p');
+            pTag.innerText = '|';
+            topLinksTag.appendChild(pTag);
+        }
+    </script>
+    {{/if}}
 </body>
+
 </html>
