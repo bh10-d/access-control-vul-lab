@@ -17,6 +17,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
 
+// handlebars configuration
+hbs.registerHelper('isdefined', function (value) {
+    return value !== undefined;
+});
+
 // // routes configuration
 // app.get('/',(req, res)=>{
 //     res.render('index', {people: "buiduchieu"});

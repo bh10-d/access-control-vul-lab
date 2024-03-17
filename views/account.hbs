@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <link href=css/academyLabHeader.css rel=stylesheet>
-    <link href=css/labs.css rel=stylesheet>
+    <link href=../css/academyLabHeader.css rel=stylesheet>
+    <link href=../css/labs.css rel=stylesheet>
     <title>User role controlled by request parameter</title>
 </head>
 
@@ -45,9 +45,13 @@
                     <section class="top-links">
                         <a href= />Home</a>
                         <p>|</p>
+                        {{#if (isdefined lab)}}
+                        <a href="{{lab}}/my-account?id=wiener">My account</a>
+                        {{else}}
                         <a href="/my-account?id=wiener">My account</a>
+                        {{/if}}
                         <p>|</p>
-                        <a href="/logout">Log out</a>
+                        <a href="{{lab}}/logout">Log out</a>
                         <p>|</p>
                     </section>
                 </header>

@@ -7,8 +7,7 @@ const lab3 = require('../routes/labs/lab3');
 
 // const app = require('express')();
 
-let count = 1;
-
+// configure app
 const app = Router();
 
 app.use(
@@ -25,33 +24,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/my-account', (req, res) => {
-    res.render('account');
+    res.redirect('/login');
 });
 app.get('/login', (req, res) => {
     res.render('login');
 });
 app.post('/login', (req, res) => {
-    if(count <= 5){ // chong brute force password
-        res.cookie('admin', false);
-        res.cookie('session', req.body.csrf); // mo phong
-        console.log(req.body);
-        if(req.body.username == 'buiduchieu' && req.body.password == 'buiduchieu'){
-            // res.cookie('admin', true);
-            // res.cookie('session', req.body.csrf); // mo phong
-            // res.redirect('/administrator');
-            res.redirect('/my-account');
-        }else{
-            count += 1;
-            res.render('login');
-        }
-        console.log(count);
-    }else{
-        res.statusCode = 404;
-        res.end('not found');
-        setTimeout(()=>{
-            count = 1; // het thoi gian ma loi 404
-        }, 10000)
-    }
+    res.redirect('/login');
 })
 
 app.get('/logout', (req, res) => {

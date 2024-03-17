@@ -1,1 +1,12 @@
-<h1>This is Header</h1>
+<header class="navigation-header">
+    <section class="top-links">
+        {{#if (isdefined lab)}}
+        <a href="{{lab}}" />Home</a>
+        {{else}}
+        <a href= />Home</a>
+        {{/if}}
+        <p>|</p>
+        <a href="{{lab}}/my-account">My account</a>
+        <p>|</p>
+    </section>
+</header>

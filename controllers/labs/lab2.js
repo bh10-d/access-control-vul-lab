@@ -8,7 +8,7 @@ lab2 = {
         // if(path == 'lab2'){
         //     res.render('index', {param: true});
         // }
-        res.render('index', {lab2: true});
+        res.render('index', {lab2: true, lab: "lab2"});
     },
    
 }

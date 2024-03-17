@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <link href=css/academyLabHeader.css rel=stylesheet>
-    <link href=css/labs.css rel=stylesheet>
+    <link href=../css/academyLabHeader.css rel=stylesheet>
+    <link href=../css/labs.css rel=stylesheet>
     <title>Access Control Lab</title>
 </head>
 
@@ -11,18 +11,21 @@
     <div theme="">
         <section class="maincontainer">
             <div class="container is-page">
-                <header class="navigation-header">
-                    <section class="top-links">
-                        <a href= />Home</a>
-                        <p>|</p>
-                        <a href="/my-account">My account</a>
-                        <p>|</p>
-                    </section>
-                </header>
+                {{> header}}
                 <header class="notification-header">
                 </header>
                 <h1>Login</h1>
                 <section>
+                    {{#if lab3}}
+                    <form class=login-form method="POST" action="/lab3/login">
+                        <input required type="hidden" name="csrf" value="IbCh9fquGPOWAlXlZO7PlyUh5aYwX0ZM">
+                        <label>Username</label>
+                        <input required type=username name="username" autofocus>
+                        <label>Password</label>
+                        <input required type=password name="password">
+                        <button class=button type=submit> Log in </button>
+                    </form>
+                    {{else}}
                     <form class=login-form method="POST" action="/login">
                         <input required type="hidden" name="csrf" value="IbCh9fquGPOWAlXlZO7PlyUh5aYwX0ZM">
                         <label>Username</label>
@@ -31,6 +34,7 @@
                         <input required type=password name="password">
                         <button class=button type=submit> Log in </button>
                     </form>
+                    {{/if}}
                 </section>
             </div>
         </section>
