@@ -10,6 +10,9 @@ lab1 = {
     getRobots: (req, res)=>{
         res.statusCode = 200;
         res.sendFile(path.join(__dirname, '../../robots.txt'), 'utf8');
+    },
+    getAdmin: (req, res)=>{
+        res.render('administrator');
     }
 }
 

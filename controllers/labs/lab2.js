@@ -10,7 +10,9 @@ lab2 = {
         // }
         res.render('index', {lab2: true, lab: "lab2"});
     },
-   
+    getAdmin: (req, res)=>{
+        res.render('administrator');
+    }
 }
 
 module.exports = {lab2}
