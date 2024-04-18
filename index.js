@@ -18,8 +18,11 @@ app.use(routes);
 
 
 // handlebars configuration
-hbs.registerHelper('isdefined', function (value) {
+hbs.registerHelper('isdefined', function (...value) {
     return value !== undefined;
+});
+hbs.registerHelper('checkLab', function (value) {
+    return value == "/lab3";
 });
 
 // // routes configuration

@@ -4,6 +4,7 @@ let cookieParser = require('cookie-parser');
 const lab1 = require('../routes/labs/lab1');
 const lab2 = require('../routes/labs/lab2');
 const lab3 = require('../routes/labs/lab3');
+const lab5 = require('../routes/labs/lab5');
 
 // const app = require('express')();
 
@@ -60,5 +61,6 @@ app.get('/administrator', (req, res) => {
 app.use(lab1);
 app.use(lab2);
 app.use(lab3);
+app.use(lab5);
 
 module.exports = app;

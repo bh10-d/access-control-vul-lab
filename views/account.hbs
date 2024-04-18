@@ -43,10 +43,18 @@
             <div class="container is-page">
                 <header class="navigation-header">
                     <section class="top-links">
-                        <a href= />Home</a>
-                        <p>|</p>
                         {{#if (isdefined lab)}}
-                        <a href="{{lab}}/my-account?id=wiener">My account</a>
+                        <a href={{lab}} />Home</a>
+                        {{else}}
+                        <a href= />Home</a>
+                        {{/if}}
+                        <p>|</p>
+                        {{#if (isdefined lab username)}}
+                            {{#if (checkLab lab)}}
+                            <a href="{{lab}}/my-account">My account</a>
+                            {{else}}
+                            <a href="{{lab}}/my-account?id={{username}}">My account</a>
+                            {{/if}}
                         {{else}}
                         <a href="/my-account?id=wiener">My account</a>
                         {{/if}}
@@ -59,7 +67,13 @@
                 </header>
                 <h1>My Account</h1>
                 <div id=account-content>
-                    <p>Your username is: wiener</p>
+                    {{#if (isdefined lab username)}}
+                        {{#if (checkLab lab)}}
+                        <p>Your username is: wiener</p>
+                        {{else}}
+                        <p>Your username is: {{username}}</p>
+                        {{/if}}
+                    {{/if}}
                     <p>Your email is: <span id="user-email">hasgd@ashdg.asd</span></p>
                     <form class="login-form" name="change-email-form" action="/my-account/change-email" method="POST">
                         <label>Email</label>

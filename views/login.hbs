@@ -16,8 +16,8 @@
                 </header>
                 <h1>Login</h1>
                 <section>
-                    {{#if lab3}}
-                    <form class=login-form method="POST" action="/lab3/login">
+                    {{#if (isdefined lab)}}
+                    <form class=login-form method="POST" action="{{lab }}/login">
                         <input required type="hidden" name="csrf" value="IbCh9fquGPOWAlXlZO7PlyUh5aYwX0ZM">
                         <label>Username</label>
                         <input required type=username name="username" autofocus>

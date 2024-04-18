@@ -1,4 +1,4 @@
-user = [
+users = [
     {
         id: 1,
         admin: true,
@@ -10,8 +10,14 @@ user = [
         admin: false,
         username: 'hieu',
         password: 'hieu'
-    }
+    },
+    {
+        id: 3,
+        admin: false,
+        username: 'truongtan',
+        password: 'truongtan'
+    },
 ];
 
 
-module.exports = user;
+module.exports = users;

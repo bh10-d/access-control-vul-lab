@@ -1,4 +1,4 @@
-let {user} = require('../data/user');
+let {users} = require('../data/users');
 let count = 1;
 let authentication = false;
 lab3 = {
@@ -29,7 +29,7 @@ lab3 = {
                 res.redirect('/lab3/login');
             }
         }else{
-            res.status(403).end('Not found');
+            res.status(404).end('Not found');
             setTimeout(()=>{
                 count = 1; // het thoi gian ma loi 404
             },10000);
@@ -38,7 +38,7 @@ lab3 = {
     getMyAccount: (req, res) => {
         if(authentication){
             let path = req.url.split('/');
-            console.log(path[1]);
+            // console.log(path[1]);
             res.statusCode = 200;
             res.render('account', {lab: "/lab3"});
         }else{
