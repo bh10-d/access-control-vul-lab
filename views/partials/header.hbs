@@ -6,7 +6,11 @@
         <a href= />Home</a>
         {{/if}}
         <p>|</p>
+        {{#if (checkLab5 lab)}}
+        <a href="{{lab}}/my-account?id={{username}}">My account</a>
+        {{else}}
         <a href="{{lab}}/my-account">My account</a>
+        {{/if}}
         <p>|</p>
     </section>
 </header>

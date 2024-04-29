@@ -25,6 +25,10 @@ hbs.registerHelper('checkLab', function (value) {
     return value == "/lab3";
 });
 
+hbs.registerHelper('checkLab5', function (value) {
+    return value == "/lab5";
+});
+
 // // routes configuration
 // app.get('/',(req, res)=>{
 //     res.render('index', {people: "buiduchieu"});

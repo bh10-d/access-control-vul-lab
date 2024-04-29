@@ -6,7 +6,7 @@ let authentication = false;
 let getUsername = '';
 lab5 = {
     getLab: (req, res)=>{
-        res.render('index', {lab: "/lab5"});
+        res.render('index', {lab: "/lab5", username: getUsername});
     },
     getLogin: (req, res)=>{
         if(authentication){
@@ -43,15 +43,16 @@ lab5 = {
     getMyAccount: (req, res) => {
         if(authentication){
             let param = req.query.id
-            // console.log(typeof param);
             if(param !== undefined){
                 getUsername = req.query.id;
             }
-            // console.log(req.query.id);
-            // let path = req.url.split('/');
-            // console.log(path[1]);
-            res.statusCode = 200;
-            res.render('account', {lab: "/lab5", username: getUsername});
+            if(req.query.id == "administrator"){
+                res.statusCode = 200;
+                res.render('administrator');
+            }else{
+                res.statusCode = 200;
+                res.render('account', {lab: "/lab5", username: getUsername});
+            }
         }else{
             res.redirect('/lab5/login');
         }
