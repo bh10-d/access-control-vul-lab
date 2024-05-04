@@ -1,0 +1,98 @@
+<div theme="blog">
+    <section class="maincontainer">
+        <div class="container is-page">
+            <header class="navigation-header">
+                <section class="top-links">
+                    <a href= />Home</a>
+                    <p>|</p>
+                    <a href="/my-account">My account</a>
+                    <p>|</p>
+                </section>
+            </header>
+            <header class="notification-header">
+            </header>
+            <div class="blog-post">
+                <img src="/image/blog/posts/38.jpg">
+                <h1>Don&apos;t Believe Everything You Read</h1>
+                <p><span id=blog-author><a href='/blogs?userId=afaec6c6-0a49-4dca-aa89-619ed79d710c'>wiener</a></span> |
+                    17 April
+                    2024</p>
+                <hr>
+                <p>Don&apos;t believe everything you read is not only a common expression, it&apos;s also a pretty
+                    obvious one. Although, it&apos;s common and obvious because it&apos;s an old saying, an old
+                    saying rooted in print journalism and their individual biases. But now, there&apos;s a whole new
+                    plethora of rubbish media outlets that seemingly spew whatever they fancy, lucky us!</p>
+                <p>I am of course referring to pages mainly found on social media platforms. You may see a headline
+                    and think no one in their right mind would believe this nonsense, but on closer inspection in
+                    the comment section, there are people furious / delighted at whatever the lie of the day is.
+                    Politicians have called on social media sites to clamp down on misleading stories and outright
+                    lies, which is possibly the most ironic thing to have been said in years, but apparently
+                    it&apos;s hard to shut down pages spewing falsehoods, thanks Zuckerberg.</p>
+                <p>The important thing to remember is that the page who have published the article have an agenda.
+                    Let&apos;s face it, it&apos;s probably click bait, fake news enticing click bait. Remember when
+                    fake news and click bait weren&apos;t four of the most prominent words in society? Simpler times
+                    indeed.</p>
+                <p>So, to spot these tales that probably are not true, there&apos;s a few things to look out for.
+                    Firstly, does it make your blood boil? These stories usually use some misleading headline to get
+                    you to access their main site, where you find out that the headline was either a lie or grossly
+                    over exaggerated. The other thing is that by writing blood boiling headlines you whip people
+                    into a frenzy, arguments erupt in the comment section, feelings are hurt and the only winner is
+                    the page you&apos;re getting more people to view.</p>
+                <p>A good name for articles like this is &apos;outrage bait&apos;. It&apos;s there to shock and
+                    anger people and it can be pretty darn damaging. Angering the masses by claiming minorities are
+                    &apos;demanding&apos; things gets that page huge reactions and responses. For instance, recently
+                    a page claimed 25% of people surveyed think Santa Claus should now be a woman or gender fluid -
+                    cue the rage. Obviously, this survey was either rigged, faked or just plain made up to anger
+                    people and all this does is get minority groups more backlash. Backlash for things they
+                    haven&apos;t even mentioned.</p>
+                <p>The horrid thing is, these pages know the contentious issues in society and, like newspapers
+                    before, they put a spin on things that they know will get a reaction because some people will
+                    believe anything. News in general in these times is so hard to believe, you&apos;ve got
+                    politicians and world leaders claiming they&apos;re being lied about, all the while they are
+                    probably misleading people themselves. The truth is, we&apos;ll never always know for certain if
+                    something is real, fake or a half truth. The only thing we can do is keep an open mind when
+                    scrolling past &apos;news&apos; pages and think is this legitimate? Or have they deliberately
+                    span this to entice people to their main site that&apos;s covered in cookies, other nonsense
+                    stories and some advert somewhere on the page that playing audio and you just can&apos;t find.
+                </p>
+                <div />
+                <hr>
+                <h1>Comments</h1>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> Tenn O&apos;Clock | 19 April
+                        2024
+                    </p>
+                    <p>I accidently stumbled on your blog. Some idiot put my laptop on the floor.</p>
+                    <p></p>
+                </section>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> Roger That | 27 April 2024
+                    </p>
+                    <p>I don&apos;t know what I&apos;d do without you. Just find another blog I guess.</p>
+                    <p></p>
+                </section>
+                <hr>
+                <section class="add-comment">
+                    <h2>Leave a comment</h2>
+                    <form action="/post/comment" method="POST" enctype="application/x-www-form-urlencoded">
+                        <input required type="hidden" name="csrf" value="kNtxrxWLzHX6q3m1ewMqifXbsq8AzV3V">
+                        <input required type="hidden" name="postId" value="2">
+                        <label>Comment:</label>
+                        <textarea required rows="12" cols="300" name="comment"></textarea>
+                        <label>Name:</label>
+                        <input required type="text" name="name">
+                        <label>Email:</label>
+                        <input required type="email" name="email">
+                        <label>Website:</label>
+                        <input pattern="(http:|https:).+" type="text" name="website">
+                        <button class="button" type="submit">Post Comment</button>
+                    </form>
+                </section>
+                {{> footer_blog}}
+            </div>
+    </section>
+    <div class="footer-wrapper">
+    </div>
+</div>

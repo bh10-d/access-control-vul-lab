@@ -41,7 +41,7 @@
     <div theme="">
         <section class="maincontainer">
             <div class="container is-page">
-                <header class="navigation-header">
+                {{!-- <header class="navigation-header">
                     <section class="top-links">
                         {{#if (isdefined lab)}}
                         <a href={{lab}} />Home</a>
@@ -64,7 +64,8 @@
                     </section>
                 </header>
                 <header class="notification-header">
-                </header>
+                </header> --}}
+                {{> header}}
                 <h1>My Account</h1>
                 <div id=account-content>
                     {{#if (isdefined lab username)}}

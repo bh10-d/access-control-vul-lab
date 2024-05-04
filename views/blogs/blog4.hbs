@@ -1,0 +1,98 @@
+<div theme="blog">
+    <section class="maincontainer">
+        <div class="container is-page">
+            <header class="navigation-header">
+                <section class="top-links">
+                    <a href= />Home</a>
+                    <p>|</p>
+                    <a href="/my-account">My account</a>
+                    <p>|</p>
+                </section>
+            </header>
+            <header class="notification-header">
+            </header>
+            <div class="blog-post">
+                <img src="/image/blog/posts/39.jpg">
+                <h1>The Art Of Communication</h1>
+                <p><span id=blog-author><a
+                            href='/blogs?userId=3a7b69b7-af04-4e09-9d2a-33ad48aaf4b8'>administrator</a></span> | 19
+                    April 2024</p>
+                <hr>
+                <p>I&apos;m a bit of a Francophile, so when I travel to France I love to speak their language.
+                    I&apos;m by no means fluent but I give it my best shot. I usually travel with my partner and
+                    son, neither of whom speak French; in fact, it&apos;s almost as though my partner refuses to
+                    speak it, he thinks we can all get by on sign language and mime.</p>
+                <p>Neither of my companions understand why I would continue to speak French when the other person is
+                    speaking English. I try to explain they want to practice their English in the same way. I speak
+                    French and they speak English, and to be honest I probably wouldn&apos;t understand a lot of
+                    what they are saying in French, as it is too fast for my comprehension.</p>
+                <p>Asking for directions isn&apos;t too hard, following the answer is, even if you do know your
+                    &apos;la gauche&apos; from your &apos;droite&apos;. The easiest option would be to hand them a
+                    map and point to your destination, or ask &apos;where am I?&apos; And get them to point at the
+                    map. But I think that&apos;s just plain rude, I like to start with a nice salutation and take it
+                    from there, even if it doesn&apos;t get me to where I want to go, just smile and wave, smile and
+                    wave. In the meantime Mr. Cynical is doing an elaborate dance, arms flailing, finger pointing
+                    with the odd preposition thrown in for good measure. It strongly resembles a game of Charades.
+                    Then there&apos;s a wave of the hand and off we trot as he says he knows where to go now. So
+                    frustrating!</p>
+                <p>I&apos;ve discovered as my memory is starting to fail me I use my hands much more when talking,
+                    and trying to remember words. This too becomes a game of charades, and quite a tricky way to
+                    conduct a conversation. It can also be quite dangerous, I have often knocked drinks over people
+                    as I become excited and animated trying to think of a word which suddenly comes to me. There has
+                    even been the odd punch in the face and poke in the eye. I have become a serial mover of
+                    potential targets, things not people. I rearrange everything on the table to keep my companions
+                    in a safe zone, then try to sit far enough away they won&apos;t be on the receiving end of my
+                    out of control limbs.</p>
+                <p>It is possible to get by on mime and gesticulation, I&apos;ve trained my dog using sign language,
+                    mostly because she won&apos;t listen to a thing I ask her to do, so in my frustration I started
+                    &apos;acting&apos; out, and things just snowballed from there. If you&apos;ve ever watched Mr.
+                    Bean then you&apos;ll know what I&apos;m talking about.</p>
+                <div />
+                <hr>
+                <h1>Comments</h1>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> Tenn O&apos;Clock | 20 April
+                        2024
+                    </p>
+                    <p>If I like something I am usually very blunt about it. Nice</p>
+                    <p></p>
+                </section>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> B.B Gun | 20 April 2024
+                    </p>
+                    <p>A guy was reading this over my shoulder on the bus. I charged him for it. Should I send
+                        royalties?</p>
+                    <p></p>
+                </section>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> Cindy Music | 20 April 2024
+                    </p>
+                    <p>People can read this you know.</p>
+                    <p></p>
+                </section>
+                <hr>
+                <section class="add-comment">
+                    <h2>Leave a comment</h2>
+                    <form action="/post/comment" method="POST" enctype="application/x-www-form-urlencoded">
+                        <input required type="hidden" name="csrf" value="kNtxrxWLzHX6q3m1ewMqifXbsq8AzV3V">
+                        <input required type="hidden" name="postId" value="4">
+                        <label>Comment:</label>
+                        <textarea required rows="12" cols="300" name="comment"></textarea>
+                        <label>Name:</label>
+                        <input required type="text" name="name">
+                        <label>Email:</label>
+                        <input required type="email" name="email">
+                        <label>Website:</label>
+                        <input pattern="(http:|https:).+" type="text" name="website">
+                        <button class="button" type="submit">Post Comment</button>
+                    </form>
+                </section>
+                {{> footer_blog}}
+            </div>
+    </section>
+    <div class="footer-wrapper">
+    </div>
+</div>

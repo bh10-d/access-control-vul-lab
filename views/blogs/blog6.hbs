@@ -1,0 +1,86 @@
+<div theme="blog">
+    <section class="maincontainer">
+        <div class="container is-page">
+            <header class="navigation-header">
+                <section class="top-links">
+                    <a href= />Home</a>
+                    <p>|</p>
+                    <a href="/my-account">My account</a>
+                    <p>|</p>
+                </section>
+            </header>
+            <header class="notification-header">
+            </header>
+            <div class="blog-post">
+                <img src="/image/blog/posts/28.jpg">
+                <h1>The history of swigging port</h1>
+                <p><span id=blog-author><a href='/blogs?userId=48d73d80-570a-40db-a80d-e14b63a75149'>carlos</a></span> |
+                    08 April
+                    2024</p>
+                <hr>
+                <p>The &apos;discovery&apos; of port dates back to the late Seventeenth Century when British sailors
+                    stumbled upon the drink in Portugal and then stumbled even more slowly home with several more
+                    bottles. It has been said since then that Portugal is the mother of port and that Britain is the
+                    father, which loosely translates as Portugal does all the hard work of growing and birthing the
+                    product, while Britain shows up on evenings and weekends just for the fun stuff.</p>
+                <p>Portugal was the only nation willing to sell port to Britain, with France, Spain and Italy
+                    denying their service, a policy that seems highly likely to return in the months to come. Yet,
+                    back then, it was a less dignified drink, being guzzled in wartime and making fools of whoever
+                    drank it. Not the drink someone would refuse these days as it isn&apos;t accompanied by the
+                    right cheese platter.</p>
+                <p>Come the early Nineteenth Century, the Port drinking games had begun. To truly prove yourself as
+                    a man, you first would have to complete the &apos;three bottle challenge&apos;, this is the
+                    ability of a young man to finish, in one sitting, three bottles of port.</p>
+                <p>But this crass challenge must have been confined to the watering holes, the taverns, the spat
+                    upon lower classes? Such low-grade behaviour would not be seen from the more elite in society
+                    until Fresher&apos;s week was invented, surely? Not so. This challenge carried with it a
+                    celebrity like badge of honour, so much so that William Pitt the Younger, the brilliant
+                    politician would be seen chugging vast amounts of port each day. Pitt was Prime Minister by 24
+                    so who&apos;s to argue with seeing off several bottles of port each day doesn&apos;t improve
+                    someone&apos;s prospects.</p>
+                <p>However, as time has gone by and the world yearns for the days when a few bottles of port was a
+                    politician&apos;s biggest vice, port has turned into an after-dinner drink, part of a cheese
+                    course and a treat on a cold winter&apos;s night. Let us never forget the history of port and
+                    its important role in crafting drinking games and politicians. Before it was mandatory you pass
+                    the port to the left, you didn&apos;t pass the port until there was none left.</p>
+                <div />
+                <hr>
+                <h1>Comments</h1>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> Nat Itoode | 22 April 2024
+                    </p>
+                    <p>Say hi to your mom for me.</p>
+                    <p></p>
+                </section>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> Rose Bush | 03 May 2024
+                    </p>
+                    <p>Great post. I wish my father was around to read it. He&apos;s not dead, he&apos;s just had
+                        his internet cut off.</p>
+                    <p></p>
+                </section>
+                <hr>
+                <section class="add-comment">
+                    <h2>Leave a comment</h2>
+                    <form action="/post/comment" method="POST" enctype="application/x-www-form-urlencoded">
+                        <input required type="hidden" name="csrf" value="kNtxrxWLzHX6q3m1ewMqifXbsq8AzV3V">
+                        <input required type="hidden" name="postId" value="6">
+                        <label>Comment:</label>
+                        <textarea required rows="12" cols="300" name="comment"></textarea>
+                        <label>Name:</label>
+                        <input required type="text" name="name">
+                        <label>Email:</label>
+                        <input required type="email" name="email">
+                        <label>Website:</label>
+                        <input pattern="(http:|https:).+" type="text" name="website">
+                        <button class="button" type="submit">Post Comment</button>
+                    </form>
+                </section>
+                {{> footer_blog}}
+            </div>
+    </section>
+    <div class="footer-wrapper">
+    </div>
+</div>

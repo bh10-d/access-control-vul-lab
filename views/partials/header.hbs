@@ -1,6 +1,6 @@
 <header class="navigation-header">
     <section class="top-links">
-        {{#if (isdefined lab)}}
+        {{!-- {{#if (isdefined lab)}}
         <a href="{{lab}}" />Home</a>
         {{else}}
         <a href= />Home</a>
@@ -11,6 +11,26 @@
         {{else}}
         <a href="{{lab}}/my-account">My account</a>
         {{/if}}
+        <p>|</p> --}}
+        {{#if (isdefined lab)}}
+        <a href={{lab}} />Home</a>
+        {{else}}
+        <a href= />Home</a>
+        {{/if}}
         <p>|</p>
+        {{#if (isdefined lab username)}}
+            {{#if (checkLab lab)}}
+            <a href="{{lab}}/my-account">My account</a>
+            {{else}}
+            <a href="{{lab}}/my-account?id={{username}}">My account</a>
+            {{/if}}
+        {{else}}
+        <a href="/my-account?id=wiener">My account</a>
+        {{/if}}
+        {{#if authentication}}
+        <p>|</p>
+        <a href="{{lab}}/logout">Log out</a>
+        <p>|</p>
+        {{/if}}
     </section>
 </header>

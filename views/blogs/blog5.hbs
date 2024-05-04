@@ -1,0 +1,78 @@
+<div theme="blog">
+    <section class="maincontainer">
+        <div class="container is-page">
+            <header class="navigation-header">
+                <section class="top-links">
+                    <a href= />Home</a>
+                    <p>|</p>
+                    <a href="/my-account">My account</a>
+                    <p>|</p>
+                </section>
+            </header>
+            <header class="notification-header">
+            </header>
+            <div class="blog-post">
+                <img src="/image/blog/posts/42.jpg">
+                <h1>Watching Me, Watching You.</h1>
+                <p><span id=blog-author><a href='/blogs?userId=afaec6c6-0a49-4dca-aa89-619ed79d710c'>wiener</a></span> |
+                    14 April
+                    2024</p>
+                <hr>
+                <p>For all you people who work from home, there&apos;s a new app that will help you stop
+                    procrastinating and focus on your goals. The trusty webcam has been put to use as you sign up
+                    with a work buddy. You work silently alongside (via the camera) to make sure your virtual
+                    colleague doesn&apos;t sneak off and waste time on social media, or whatever else keeps you from
+                    your daily tasks.</p>
+                <p>I think this is genius. I also think it has endless possibilities. For a start, if you&apos;re
+                    using it to work, knowing a stranger can peek inside your home, what&apos;s the first thing
+                    you&apos;re going to do? Housework of course! Win, win. It will stop you being a lazy toad, and
+                    you will have to get your finger out. You could also book a housework session. You and another
+                    stranger who find any excuse not to whip out the bleach and scrubbing brush can spur each other
+                    on. Competing to finish cleaning the bathroom in the fastest time, changing the beds, or any
+                    other mind-numbingly boring tasks could, at last, be lots of fun.</p>
+                <p>I have been known not to wash the dishes immediately after eating a meal. Hey, book a washing up
+                    session. Being spied on is the new omnipresence that will keep you on your toes, and your home
+                    Pinterest worthy at all times. As I write I have had 15 Facebook and 20 Twitter notifications.
+                    Left to my own devices I cannot ignore that flashing tab. I need someone watching me. No more
+                    sweeping the dust under the carpet, eyes will be on me and judging my every move. Although, to
+                    be honest, if I spent more time doing what I should be doing I could probably afford a cleaner
+                    and be done with it.</p>
+                <p>This is the tip of a technological iceberg where people are teaming up, via webcam to participate
+                    in a number of different activities. You can even take spin classes where your teacher, who will
+                    be earning a lot of money without even having to leave his/her bike, can communicate with you
+                    via a tablet on your handlebars. This is a popular topic of conversation for me. How far do we
+                    go before we have a community of hermit-like agoraphobics never needing to set foot outside the
+                    front door again? Where do I sign up?</p>
+                <div />
+                <hr>
+                <h1>Comments</h1>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> Lee Onmee | 23 April 2024
+                    </p>
+                    <p>I&apos;m just here to read the comments.</p>
+                    <p></p>
+                </section>
+                <hr>
+                <section class="add-comment">
+                    <h2>Leave a comment</h2>
+                    <form action="/post/comment" method="POST" enctype="application/x-www-form-urlencoded">
+                        <input required type="hidden" name="csrf" value="kNtxrxWLzHX6q3m1ewMqifXbsq8AzV3V">
+                        <input required type="hidden" name="postId" value="5">
+                        <label>Comment:</label>
+                        <textarea required rows="12" cols="300" name="comment"></textarea>
+                        <label>Name:</label>
+                        <input required type="text" name="name">
+                        <label>Email:</label>
+                        <input required type="email" name="email">
+                        <label>Website:</label>
+                        <input pattern="(http:|https:).+" type="text" name="website">
+                        <button class="button" type="submit">Post Comment</button>
+                    </form>
+                </section>
+                {{> footer_blog}}
+            </div>
+    </section>
+    <div class="footer-wrapper">
+    </div>
+</div>

@@ -1,0 +1,91 @@
+<div theme="blog">
+    <section class="maincontainer">
+        <div class="container is-page">
+            <header class="navigation-header">
+                <section class="top-links">
+                    <a href= />Home</a>
+                    <p>|</p>
+                    <a href="/my-account">My account</a>
+                    <p>|</p>
+                </section>
+            </header>
+            <header class="notification-header">
+            </header>
+            <div class="blog-post">
+                <img src="/image/blog/posts/15.jpg">
+                <h1>Meeting Up</h1>
+                <p><span id=blog-author><a
+                            href='/blogs?userId=3a7b69b7-af04-4e09-9d2a-33ad48aaf4b8'>administrator</a></span> | 16
+                    April 2024</p>
+                <hr>
+                <p>In the past arranging events, and to meet up with friends and family was easy. The first option for
+                    an event was to send out an invitation, in the post, and they would R.S.V.P, sorted. Numbers
+                    counted, an event arranged. Or we&apos;d make a call, &apos;hey are you free to see a movie on
+                    Saturday?&apos; It would have been a straightforward yes or no. Now with all this new technology
+                    enabling us to communicate wherever we are in the world, the process has actually got harder.</p>
+                <p>The biggest mistake people are making is wanting to socialize with all of their friends at once,
+                    setting up group chats, and giving people CHOICES. A big mistake that one. Pick a day and time and
+                    stick to it even if you end up going out on your own. Because once you offer choices, in a group
+                    chat, it all gets very messy. You just can&apos;t pin people down that way,</p>
+                <p>&apos;Can we make it half an hour later?&apos;</p>
+                <p>&apos;I can do any other day.&apos; (That is usually not true when you choose another day, it becomes
+                    any other day apart from that one).</p>
+                <p>&apos;Why don&apos;t we choose a different film/bar/venue?&apos; (This question then hijacks your
+                    original idea as others think that&apos;s a jolly good idea and create their own splinter group).
+                </p>
+                <p>And so on it continues until you wish you hadn&apos;t asked anyone in the first place. You started by
+                    inviting around twenty people, allowing for some not to be able to attend, and on the day
+                    you&apos;ve had only two definites. You&apos;re rushing about getting ready because as usual,
+                    you&apos;ve left pressing a shirt until the last minute, then the notifications come through,</p>
+                <p>&apos;Decided to go with the others, sounds like fun.&apos;</p>
+                <p>&apos;Broke, can&apos;t do it tonight.&apos; (They didn&apos;t know that earlier?)</p>
+                <p>So, nobody is going out with you after all, after ALL that hassle trying to coordinate a bunch of
+                    ungrateful wretches that you made the mistake of giving CHOICES to. Looks like Mum&apos;s offer of
+                    pizza and a movie in front of the TV doesn&apos;t seem so bad after all.</p>
+                <div />
+                <hr>
+                <h1>Comments</h1>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> Scott Com | 18 April 2024
+                    </p>
+                    <p>I&apos;ve been saying this for years. If I swore less they may have left my blogs up too!</p>
+                    <p></p>
+                </section>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> Roger That | 21 April 2024
+                    </p>
+                    <p>Will you let me paint you?</p>
+                    <p></p>
+                </section>
+                <section class="comment">
+                    <p>
+                        <img src="/resources/images/avatarDefault.svg" class="avatar"> Shawn Again | 30 April 2024
+                    </p>
+                    <p>Can you help me write my novel? I think you&apos;d be really good at it.</p>
+                    <p></p>
+                </section>
+                <hr>
+                <section class="add-comment">
+                    <h2>Leave a comment</h2>
+                    <form action="/post/comment" method="POST" enctype="application/x-www-form-urlencoded">
+                        <input required type="hidden" name="csrf" value="kNtxrxWLzHX6q3m1ewMqifXbsq8AzV3V">
+                        <input required type="hidden" name="postId" value="7">
+                        <label>Comment:</label>
+                        <textarea required rows="12" cols="300" name="comment"></textarea>
+                        <label>Name:</label>
+                        <input required type="text" name="name">
+                        <label>Email:</label>
+                        <input required type="email" name="email">
+                        <label>Website:</label>
+                        <input pattern="(http:|https:).+" type="text" name="website">
+                        <button class="button" type="submit">Post Comment</button>
+                    </form>
+                </section>
+                {{> footer_blog}}
+            </div>
+    </section>
+    <div class="footer-wrapper">
+    </div>
+</div>

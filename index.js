@@ -8,6 +8,7 @@ const routes = require('./routes/routes.js');
 
 // view engine configuration
 hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartials(__dirname + '/views/blogs');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
@@ -27,6 +28,10 @@ hbs.registerHelper('checkLab', function (value) {
 
 hbs.registerHelper('checkLab5', function (value) {
     return value == "/lab5";
+});
+
+hbs.registerHelper('posts', function (value) {
+    return `blog${value}`
 });
 
 // // routes configuration

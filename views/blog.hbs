@@ -1,0 +1,11 @@
+<head>
+    <link href=../css/academyLabHeader.css rel=stylesheet>
+    <link href=../css/labsBlog.css rel=stylesheet>
+    <title>User ID controlled by request parameter, with unpredictable user IDs</title>
+</head>
+
+<div>
+    {{#if (isdefined postId)}}
+        {{> (posts postId)}}
+    {{/if}}
+</div>

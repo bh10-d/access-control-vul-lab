@@ -6,7 +6,7 @@ let authentication = false;
 let getUsername = '';
 lab5 = {
     getLab: (req, res)=>{
-        res.render('index', {lab: "/lab5", username: getUsername});
+        res.render('index', {lab: "/lab5", username: getUsername, authentication: authentication});
     },
     getLogin: (req, res)=>{
         if(authentication){
@@ -51,7 +51,7 @@ lab5 = {
                 res.render('administrator');
             }else{
                 res.statusCode = 200;
-                res.render('account', {lab: "/lab5", username: getUsername});
+                res.render('account', {lab: "/lab5", username: getUsername, authentication: authentication});
             }
         }else{
             res.redirect('/lab5/login');
