@@ -5,11 +5,12 @@ const app = Router();
 
 app.get('/lab6', lab6.getLab);
 app.get('/lab6/post', lab6.getPosts);
-// app.get('/lab5/login', lab5.getLogin);
-// app.post('/lab5/login', lab5.postLogin);
-// app.get('/lab5/my-account', lab5.getMyAccount);
-// // app.get('/lab5/administrator', lab5.getAdmin);
-// app.get('/lab5/logout', lab5.getLogout);
+app.get('/lab6/blogs', lab6.getBlog);
+app.get('/lab6/login', lab6.getLogin);
+app.post('/lab6/login', lab6.postLogin);
+app.get('/lab6/my-account', lab6.getMyAccount);
+// // app.get('/lab6/administrator', lab6.getAdmin);
+app.get('/lab6/logout', lab6.getLogout);
 
 app.all('/lab6/*', (req,res) => {
     res.statusCode = 404;

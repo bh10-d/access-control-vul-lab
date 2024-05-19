@@ -30,6 +30,10 @@ hbs.registerHelper('checkLab5', function (value) {
     return value == "/lab5";
 });
 
+hbs.registerHelper('checkLab6', function (value) {
+    return value == "/lab6";
+});
+
 hbs.registerHelper('posts', function (value) {
     return `blog${value}`
 });

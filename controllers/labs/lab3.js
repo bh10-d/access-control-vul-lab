@@ -9,7 +9,7 @@ lab3 = {
         if(authentication){
             res.redirect('/lab3/my-account');
         }else{
-            res.render('login', {lab3: true, lab: "/lab3"});
+            res.render('login', {lab3: true, lab: "/lab3", authentication: authentication});
         }
     },
     postLogin: (req, res)=>{
@@ -40,7 +40,7 @@ lab3 = {
             let path = req.url.split('/');
             // console.log(path[1]);
             res.statusCode = 200;
-            res.render('account', {lab: "/lab3"});
+            res.render('account', {lab: "/lab3", authentication:authentication});
         }else{
             res.redirect('/lab3/login');
         }

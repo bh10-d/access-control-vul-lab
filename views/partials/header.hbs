@@ -22,7 +22,11 @@
             {{#if (checkLab lab)}}
             <a href="{{lab}}/my-account">My account</a>
             {{else}}
-            <a href="{{lab}}/my-account?id={{username}}">My account</a>
+                {{#if (checkLab6 lab)}}
+                <a href="{{lab}}/my-account?id={{uid}}">My account</a>
+                {{else}}
+                <a href="{{lab}}/my-account?id={{username}}">My account</a>
+                {{/if}}
             {{/if}}
         {{else}}
         <a href="/my-account?id=wiener">My account</a>

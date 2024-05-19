@@ -11,7 +11,8 @@
     <div theme="">
         <section class="maincontainer">
             <div class="container is-page">
-                <header class="navigation-header">
+                {{> header}}
+                {{!-- <header class="navigation-header">
                     <section class="top-links">
                         <a href= />Home</a>
                         <p>|</p>
@@ -31,11 +32,14 @@
                         <a href="/my-account">My account</a>
                         <p>|</p>
                     </section>
-                </header>
+                </header> --}}
                 <header class="notification-header">
                 </header>
                 <section>
-                    <h1>Users</h1>
+                    <h1>Admin Panel</h1>
+                </section>
+                <section>
+                    <h1>Manage Users</h1>
                     <div>
                         <span>wiener - </span>
                         <a href="/admin-5tseao/delete?username=wiener">Delete</a>
@@ -52,6 +56,19 @@
         <div class="footer-wrapper">
         </div>
     </div>
+    <script>
+        var isAdmin = false;
+        if (isAdmin) {
+            var topLinksTag = document.getElementsByClassName("top-links")[0];
+            var adminPanelTag = document.createElement('a');
+            adminPanelTag.setAttribute('href', '/administrator');
+            adminPanelTag.innerText = 'Admin panel';
+            topLinksTag.append(adminPanelTag);
+            var pTag = document.createElement('p');
+            pTag.innerText = '|';
+            topLinksTag.appendChild(pTag);
+        }
+    </script>
 </body>
 
 </html>
