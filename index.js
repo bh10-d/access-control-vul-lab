@@ -31,7 +31,7 @@ hbs.registerHelper('checkLab5', function (value) {
 });
 
 hbs.registerHelper('checkLab6', function (value) {
-    return value == "/lab6";
+    return value == "/lab6" || value == "/solve";
 });
 
 hbs.registerHelper('posts', function (value) {
